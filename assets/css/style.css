@@ -1,0 +1,253 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+
+/*=============== BASE ===============*/
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #e6eaee;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none
+}
+
+.button-hero {
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  
+.button-hero:hover {
+    background: linear-gradient(180deg,
+            rgba(255, 255, 255, 0.377) 0%,
+            rgb(69, 150, 255) 95%);
+  }
+
+/*=============== FILTERS TABS===============*/
+.filters__content {
+    margin: 2rem 0 2.5rem;
+    background-color: #e6eaee;
+    padding: .375rem;
+    border-radius: .75rem;
+    display: flex;
+    justify-content: space-between;
+    column-gap: .5rem;
+}
+.filterse__content {
+    margin: 2rem 0 2.5rem;
+    background-color: #e6eaee;
+    padding: .375rem;
+    border-radius: .75rem;
+    display: flex;
+    justify-content: space-between;
+    column-gap: .5rem;
+}
+
+.filters__button {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    font-weight: 500;
+    border-radius: .75rem;
+    cursor: pointer;
+    background-color: transparent;
+    transition: .3s;
+}
+
+.filters__button:hover {
+    background-color: #fafdff;
+}
+
+.filterse__button {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    font-weight: 500;
+    border-radius: .75rem;
+    cursor: pointer;
+    background-color: transparent;
+    transition: .3s;
+}
+
+.filterse__button:hover {
+    background-color: #fafdff;
+}
+
+/*=============== PROJECTS ===============*/
+.projects__card {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 70%;
+}
+
+.img-content{
+    width:100%; 
+    height  :250px;
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+  }
+
+.projects__card img {
+    width: 100%;
+    height: 100%;
+}
+
+.projects__modal {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: -100%;
+    left: 0;
+    background: linear-gradient(180deg,
+            rgba(255, 255, 255, 0.377) 0%,
+            #000 95%);
+    display: grid;
+    align-items: flex-end;
+    padding: 1.5rem 1.25rem;
+    transition: .3s;
+}
+
+.projects__subtitle,
+.projects__title {
+    color: #fff;
+}
+
+
+.projects__card:hover .projects__modal {
+    bottom: 0;
+}
+
+/*=============== SKILLS ===============*/
+.filter__content {
+    row-gap: 3.5rem;
+}
+
+.skills__title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.skills__box {
+    display: flex;
+    justify-content: center;
+    column-gap: 3rem;
+}
+
+.skills__group {
+    display: grid;
+    align-content: flex-start;
+    row-gap: 1rem;
+}
+
+.skills__data {
+    display: flex;
+    column-gap: .5rem;
+}
+
+.skills__name {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+/* Hide and show projects & skills */
+.filters [data-content] {
+    display: none;
+}
+.filterse [data-content] {
+    display: none;
+}
+
+.filters__active[data-content] {
+    display: grid;
+}
+.filterse__active[data-content] {
+    display: grid;
+}
+
+/* Activate button filter */
+.filter-tab-active {
+    background-color: #fafdff;
+}
+
+/*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar {
+    width: .6rem;
+    border-radius: .5rem;
+    background-color: #ececec;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #bdbdbd;
+    border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #9ab5ff;
+}
+
+/*=============== BREAKPOINTS ===============*/
+
+@media screen and (min-width: 776px) {
+    .filter__content {
+        grid-template-columns: repeat(2, 332px);
+    }
+
+    .filter__content {
+        justify-content: center;
+        column-gap: 3rem;
+    }
+}
+
+@media screen and (min-width: 376px) {
+    .about-text {
+        text-align: center;
+    }
+}
+
+hr {
+    margin-bottom: 30px;
+    width: 80px;
+    height: 3px;
+    opacity: 1;
+    color: #906afa;
+    background-color: #4f7bf5;
+}
+
+
+.image-about img {
+    border-radius: 15px;
+}
+
+.navbar-nav a {
+    font-size: 15px;
+    font-weight: 15px;
+}
+
+.my-hero {
+    padding-top: 60px;
+    background: linear-gradient(150deg,#281483 15%,#8f6ed5 70%,#d782d9 94%);
+}
+
+.bg-nav{
+    background-color: rgba(129, 134, 204, 0.99);
+}
+
+.footer{
+    background-color: rgba(118, 123, 192, 0.99);
+    color: white;
+}
+
