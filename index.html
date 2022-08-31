@@ -5,11 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./assets/img/favicon.png" rel="icon">
+
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="./assets/css/style.css">
     <!--=============== REMIX ICONS ===============-->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-
+    <!--=============== AOS ===============-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
@@ -47,14 +50,14 @@
 
     <!-- Header -->
     <div id="home" class="my-hero shadow-sm">
-        <div class="container flex-wrap">
+        <div class="container flex-wrap" data-aos="fade-down" >
             <div class="row">
                 <div class="col-lg-6 align-self-center">
                     <div class="hero-text">
-                        <h1 class="fw-bold text-light text-center text-lg-start">Aldy Sufriyanto</h1>
-                        <h2 class="text-light text-center text-lg-start">Web Developer</h2>
+                        <h1 class="fw-bold text-light text-center text-lg-start headline">Aldy Sufriyanto</h1>
+                        <h2 class="text-light text-center text-lg-start headline">Web Developer</h2>
                     </div>
-                    <a download="" class="mt-3 py-2 px-3 text-center shadow p-3 rounded text-dark button-hero"
+                    <a download="" class="mt-3 py-2 px-3 headline text-center shadow p-3 rounded text-dark button-hero"
                         href="assets/pdf/Aldy Sufriyanto-cv.pdf"><i class="ri-download-line"></i> Download CV</a>
                     <div class="text-center mt-4 text-lg-start">
                         <a class="mt-2 py-2 px-3 shadow p-3 mb-5 rounded text-dark button-hero"
@@ -67,13 +70,12 @@
                                 alt="Icon Linkedin" width="24px" height="24px" /> <span>Github</span></a>
                     </div>
                 </div>
-
                 <img class="col-lg-6 text-center align-items-end p-0" src="./assets/img/avataaars.png" />
             </div>
         </div>
     </div>
 
-    <section id="about">
+    <section id="about" data-aos="fade-up">
         <div class="text-center pt-5 h1 lh-base text-highlight">About <span class="fw-bold text-nowrap">&nbsp;Me</span>
         </div>
         <div class="d-flex justify-content-center mb-3" style="margin-top: -20px;">
@@ -81,7 +83,7 @@
         </div>
         <div class="container">
             <div class="row align-items-center">
-                <div class="col text-center image-about">
+                <div class="col text-center image-about headline">
                     <img src="./assets/img/about.jpg" alt="">
                 </div>
                 <div class="col about-text">
@@ -95,7 +97,7 @@
         </div>
     </section>
 
-    <section id="experience">
+    <section id="experience" data-aos="fade-up">
         <div class="text-center pt-5 h1 lh-base text-highlight">Experiences<span
                 class="fw-bold text-nowrap">&nbsp;and</span> Organizations</div>
         <div class="d-flex mb-2 justify-content-center" style="margin-top: -20px;">
@@ -103,7 +105,7 @@
         </div>
         <div class="container">
             <div class="row justify-content-md-center">
-                <div class="col">
+                <div class="col" data-aos="fade-right">
                     <span class="fw-bold" style="font-size: 30px"><i class="ri-award-fill"></i> Experiences</span>
                     <div class="mb-3 ps-5">
                         <p class="fs-6 mb-0 fw-normal">Kerja Praktik di PT.LG ELECTRONIC INDONESIA tahun 2017</p>
@@ -130,7 +132,7 @@
                         <small class="text-muted fw-normal">Sebagai Web Developer.</small>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col" data-aos="fade-left">
                     <span class="fw-bold" style="font-size: 30px"><i class="ri-organization-chart"></i>
                         Organizations</span>
                     <div class="mb-3 ps-5">
@@ -149,7 +151,7 @@
             </div>
         </div>
     </section>
-    <section class="filterse container" id="project">
+    <section class="filterse container" id="project" data-aos="fade-up">
         <div class="text-center pt-5 h1 lh-base text-highlight">Projects<span
                 class="fw-bold text-nowrap">&nbsp;and</span> Skills</div>
         <div class="d-flex mb-2 justify-content-center" style="margin-top: -20px;">
@@ -166,9 +168,9 @@
 
         <div class="filters__sections">
             <!--=============== PROJECTS ===============-->
-            <div class="filter__content filters__active" data-content id="projects">
+            <div class="filter__content filters__active" data-content id="projects" >
                 <div class="card card-item shadow-lg text-black rounded">
-                    <div class="projects__card">
+                    <div class="projects__card" data-aos="flip-left">
                         <div class="img-content rounded-top"
                             style="background-image: url('./assets/img/project1.png');">
                         </div>
@@ -176,7 +178,7 @@
                             <a href="https://kosku99.herokuapp.com/" class="btn btn-primary">Buka website</a>
                         </div>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body" data-aos="flip-left">
                         <div>
                             <h5 class="card-title fw-bold">Aplikasi Sewa Kamar Kos</h5>
                             <p class="text-muted my-0">Bootstrap & Laravel </p>
@@ -189,8 +191,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="card card-item shadow-lg text-black rounded">
-                    <div class="projects__card">
+                <div class="card card-item shadow-lg text-black rounded" >
+                    <div class="projects__card" data-aos="flip-left">
                         <div class="img-content rounded-top"
                             style="background-image: url('./assets/img/project2.png');">
                         </div>
@@ -198,7 +200,7 @@
                             <a href="http://silab18.herokuapp.com/" class="btn btn-primary">Buka website</a>
                         </div>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body" data-aos="flip-left">
                         <div>
                             <h5 class="card-title fw-bold">Aplikasi Inventaris dan Pinjam Barang</h5>
                             <p class="text-muted my-0">Bootstrap & Laravel </p>
@@ -285,6 +287,13 @@
                                     <h3 class="skills__name">MySQL</h3>
                                 </div>
                             </div>
+                            <div class="skills__data">
+                                <i class="ri-checkbox-circle-line"></i>
+
+                                <div>
+                                    <h3 class="skills__name">Laravel</h3>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -296,7 +305,7 @@
     <!-- Akhir Header -->
 
     <div class="py-4 mt-5 bg-nav">
-        <p class="fs-6 fw-normal text-center text-light" style="font-style: italic">
+        <p class="fs-6 fw-normal text-center text-light" style="font-style: italic" >
             ” It's Nice To Be Important, But More Important To Be Nice ”
         </p>
         <p class="fs-6 fw-normal text-center text-light mb-0">~ John Templeton ~</p>
@@ -312,25 +321,19 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
     </script>
-    <!--=============== SCROLLREVEAL ===============-->
-    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== AOS JS ===============-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: false,
+            duration:2000
+        });
+      </script>
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
-    <!-- <script>
-        // When the user scrolls down 20px from the top of the document, slide down the navbar
-        window.onscroll = function () {
-            scrollFunction()
-        };
 
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                document.getElementById("navbar").style.top = "0";
-            } else {
-                document.getElementById("navbar").style.top = "-999px";
-            }
-        }
-    </script> -->
     <script type="text/javascript">
         var nav = document.querySelector('nav');
 

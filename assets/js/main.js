@@ -28,15 +28,3 @@ tabs.forEach(tab =>{
         tab.classList.add('filtere-tab-active')
     })
 })
-
-/*=============== SCROLL REVEAL ANIMATION ===============*/
-const sr = ScrollReveal({
-    origin: 'top',
-    distance: '60px',
-    duration: 2500,
-    delay: 400,
-})
-
-sr.reveal(`.filters__content`, {delay: 900})
-sr.reveal(`.filters`, {delay: 1000})
-sr.reveal(`.foto, .text`, {delay: 500})

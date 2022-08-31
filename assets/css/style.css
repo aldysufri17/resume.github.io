@@ -21,6 +21,27 @@ a {
     text-decoration: none
 }
 
+hr {
+    margin-bottom: 30px;
+    width: 80px;
+    height: 3px;
+    opacity: 1;
+    color: #906afa;
+    background-color: #4f7bf5;
+}
+
+/*=============== Navbar===============*/
+
+.navbar-nav a {
+    font-size: 15px;
+    font-weight: 15px;
+}
+
+.bg-nav{
+    background-color: rgba(129, 134, 204, 0.99);
+}
+
+/*=============== Hero===============*/
 .button-hero {
     background-color: rgb(255, 255, 255);
     text-decoration: none;
@@ -31,6 +52,17 @@ a {
             rgba(255, 255, 255, 0.377) 0%,
             rgb(69, 150, 255) 95%);
   }
+
+.my-hero {
+    padding-top: 60px;
+    background: linear-gradient(150deg,#281483 15%,#8f6ed5 70%,#d782d9 94%);
+}
+
+
+/*=============== About ===============*/
+.image-about img {
+    border-radius: 15px;
+}
 
 /*=============== FILTERS TABS===============*/
 .filters__content {
@@ -218,34 +250,7 @@ a {
     }
 }
 
-hr {
-    margin-bottom: 30px;
-    width: 80px;
-    height: 3px;
-    opacity: 1;
-    color: #906afa;
-    background-color: #4f7bf5;
-}
-
-
-.image-about img {
-    border-radius: 15px;
-}
-
-.navbar-nav a {
-    font-size: 15px;
-    font-weight: 15px;
-}
-
-.my-hero {
-    padding-top: 60px;
-    background: linear-gradient(150deg,#281483 15%,#8f6ed5 70%,#d782d9 94%);
-}
-
-.bg-nav{
-    background-color: rgba(129, 134, 204, 0.99);
-}
-
+/*=============== Footer===============*/
 .footer{
     background-color: rgba(118, 123, 192, 0.99);
     color: white;
