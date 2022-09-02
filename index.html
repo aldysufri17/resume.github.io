@@ -22,7 +22,7 @@
 <body>
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
         <div class="container">
-            <a class="navbar-brand" href="#">Hi...</a>
+            <a class="navbar-brand fw-bold" href="#">Hi.!👋</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -32,7 +32,7 @@
                 <div class="mx-auto"></div>
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Home</a>
+                        <a class="nav-link text-white underline" href="#">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="#about">About</a>
@@ -49,8 +49,20 @@
     </nav>
 
     <!-- Header -->
-    <div id="home" class="my-hero shadow-sm">
-        <div class="container flex-wrap" data-aos="fade-down" >
+    <div id="home" class="my-hero shadow-lg">
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <div class="container flex-wrap" data-aos="fade-down">
             <div class="row">
                 <div class="col-lg-6 align-self-center">
                     <div class="hero-text">
@@ -88,10 +100,10 @@
                 </div>
                 <div class="col about-text">
                     <h2 class="">Hello I'm Aldy</h2>
-                    Saya mempunyai ketertarikan di bidang Web Development. Mengikuti beberapa organisasi dan kepanitiaan
-                    di kampus. Tertarik di bidang Teknologi Informasi. Saya merupakan pekerja keras dan bisa bekerja
-                    secara fleksibel bersama tim. saya juga sangat suka belajar hal baru sehingga akan sangat cepat
-                    beradaptasi dengan pekerjaan.
+                    <p>Saya merupakan lulusan Teknik Komputer Universitas Diponegoro pada tahun 2022. Saat perkuliahan
+                        mengikuti beberapa organisasi dan kepanitiaan di kampus. Sangat tertarik di bidang Teknologi
+                        Informasi. Saya merupakan pekerja keras dan bisa bekerja
+                        secara fleksibel bersama tim.</p>
                 </div>
             </div>
         </div>
@@ -109,7 +121,7 @@
                     <span class="fw-bold" style="font-size: 30px"><i class="ri-award-fill"></i> Experiences</span>
                     <div class="mb-3 ps-5">
                         <p class="fs-6 mb-0 fw-normal">Kerja Praktik di PT.LG ELECTRONIC INDONESIA tahun 2017</p>
-                        <small class="text-muted fw-normal">Sebagai Pembantu Teknisi Utama.</small>
+                        <small class="text-muted fw-normal">Membantu teknisi dalam reparasi elektronik.</small>
                     </div>
                     <div class="mb-3 ps-5">
                         <p class="fs-6 mb-0 fw-normal">Peserta UNEXT ROLLER tahun 2017</p>
@@ -121,7 +133,8 @@
                     </div>
                     <div class="mb-3 ps-5">
                         <p class="fs-6 mb-0 fw-normal">Peserta ELEMENT tahun 2019</p>
-                        <small class="text-muted fw-normal">Latihan Keterampilan Manajemen dan Kepemimpinan Mahasiswa Fakultas Teknik.</small>
+                        <small class="text-muted fw-normal">Latihan Keterampilan Manajemen dan Kepemimpinan Mahasiswa
+                            Fakultas Teknik.</small>
                     </div>
                     <div class="mb-3 ps-5">
                         <p class="fs-6 mb-0 fw-normal">Kerja Praktik di WebHade Creative tahun 2020</p>
@@ -168,7 +181,7 @@
 
         <div class="filters__sections">
             <!--=============== PROJECTS ===============-->
-            <div class="filter__content filters__active" data-content id="projects" >
+            <div class="filter__content filters__active" data-content id="projects">
                 <div class="card card-item shadow-lg text-black rounded">
                     <div class="projects__card" data-aos="flip-left">
                         <div class="img-content rounded-top"
@@ -191,7 +204,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card card-item shadow-lg text-black rounded" >
+                <div class="card card-item shadow-lg text-black rounded">
                     <div class="projects__card" data-aos="flip-left">
                         <div class="img-content rounded-top"
                             style="background-image: url('./assets/img/project2.png');">
@@ -305,7 +318,7 @@
     <!-- Akhir Header -->
 
     <div class="py-4 mt-5 bg-nav">
-        <p class="fs-6 fw-normal text-center text-light" style="font-style: italic" >
+        <p class="fs-6 fw-normal text-center text-light" style="font-style: italic">
             ” It's Nice To Be Important, But More Important To Be Nice ”
         </p>
         <p class="fs-6 fw-normal text-center text-light mb-0">~ John Templeton ~</p>
@@ -313,7 +326,7 @@
 
     <footer>
         <div class="text-center footer">
-            Created with <i class="ri-heart-fill text-danger"></i> by Black Shadow 
+            Created with <i class="ri-heart-fill text-danger"></i> by Aldy Sufriyanto
         </div>
     </footer>
 
@@ -327,24 +340,12 @@
     <script>
         AOS.init({
             once: false,
-            duration:2000
+            duration: 2000
         });
-      </script>
+    </script>
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
-
-    <script type="text/javascript">
-        var nav = document.querySelector('nav');
-
-        window.addEventListener('scroll', function () {
-            if (window.pageYOffset > 100) {
-                nav.classList.add('bg-nav', 'shadow');
-            } else {
-                nav.classList.remove('bg-nav', 'shadow');
-            }
-        });
-    </script>
 </body>
 
 </html>
